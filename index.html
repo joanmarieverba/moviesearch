@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Movie Search</title>
+    <meta name=“viewport” content=“width=device-width,initial-scale=1”>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.css">
+    <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">     
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+
+<body>
+    <div class="container"
+
+    <div class="page-header">
+        <h1>Movie Search</h1>
+    </div>
+
+
+        <!-- This form will be where users input data about the movies -->
+        <form id="movie-form" class="btnsearch">
+            <label for="movie-input">Search for a movie</label>
+            <input type="text" id="movie-input">
+            <br>
+
+            <!-- This button will trigger our AJAX call -->
+            <input id="find-movie" type="submit" value="Movie Search">
+        </form>
+
+
+    <div class="row">
+
+        <div class="col-md-2">
+ 
+        </div>
+
+        <div class="col-md-4">
+        <!-- Movie poster contents in here -->
+             <div id="movie-poster"></div>
+        </div>
+
+        <div class="col-md-6">
+            <div class="data">
+                <h3><p id="title"></p></h3>
+                <h3><p id="year"></p></h3>
+                <h3><p id="actors"></p></h3>
+                <h3><p id="plot"></p></h3>
+                <h3><p id="rating"></p></h3>
+            </div>
+        </div>
+
+    </div>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="index.js"></script>
+       
+    </div>
+</body>
+
+</html>
