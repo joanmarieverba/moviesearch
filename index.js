@@ -44,6 +44,9 @@
         let image = $("<img>").attr("src", imgURL);
         // Appending the image
         $("#movie-poster").append(image);
+
+            //clear input box
+            $("#movie-input").val("");
 });
 
 });
